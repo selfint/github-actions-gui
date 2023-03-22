@@ -15,6 +15,9 @@ const testFetcher: Fetcher = {
 
 describe('test get action yml', () => {
     it('works', () => {
-        expect(getActionYml(testFetcher, "https://github.com/actions/checkout/blob/v3.4.0/action.yml")).toMatchSnapshot();
+        expect(getActionYml(
+            testFetcher,
+            "https://github.com/actions/checkout/blob/v3.4.0/action.yml"
+        )).toMatchSnapshot();
     })
 });
