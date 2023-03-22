@@ -6,13 +6,33 @@
 	<title>Github Action UI</title>
 </svelte:head>
 
-<NavBar />
+<div id="nav">
+	<NavBar />
+</div>
 
-<slot />
+<div id="content">
+	<slot />
+</div>
 
 <style>
 	:global(*) {
 		margin: 0;
 		padding: 0;
+	}
+
+	:global(html, body) {
+		height: 100%;
+	}
+
+	:root {
+		--var1: 7%;
+	}
+
+	#nav {
+		height: var(--var1);
+	}
+
+	#content {
+		height: calc(100% - var(--var1));
 	}
 </style>

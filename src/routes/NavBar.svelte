@@ -8,9 +8,8 @@
 	nav {
 		background-color: #1e1e1e;
 		color: #ffffff;
-		padding: 5%;
 		display: flex;
-		height: min-content;
+		height: 100%;
 	}
 
 	.edit {
@@ -27,7 +26,9 @@
 
 	.button {
 		border-radius: 6px;
-		padding: 3%;
+		padding: 1px;
+		height: fit-content;
+		width: fit-content;
 		text-decoration: none;
 	}
 </style>
