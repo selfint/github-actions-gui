@@ -4,6 +4,6 @@
 	div {
 		outline-color: black;
 		outline-style: solid;
-		flex-grow: 1;
+		flex-grow: 4;
 	}
 </style>
