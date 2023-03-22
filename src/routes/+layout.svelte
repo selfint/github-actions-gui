@@ -1,5 +1,11 @@
+<script lang="ts">
+	import NavBar from './NavBar.svelte';
+</script>
+
 <svelte:head>
 	<title>Github Action UI</title>
 </svelte:head>
 
-hello world 2
+<NavBar />
+
+<slot />
