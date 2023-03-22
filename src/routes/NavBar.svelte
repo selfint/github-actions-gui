@@ -1,6 +1,7 @@
 <nav>
 	Github Actions UI
-	<button>Export</button>
+	<a class="button edit" href="/">Edit</a>
+	<a class="button export" href="/export">Export</a>
 </nav>
 
 <style>
@@ -12,11 +13,21 @@
 		height: min-content;
 	}
 
-	button {
+	.edit {
+		margin-left: auto;
+		color: #1b1f24;
+		background-color: #f6f8fa;
+	}
+
+	.export {
+		margin-left: auto;
 		background-color: #2da44e;
 		color: #ffffff;
+	}
+
+	.button {
 		border-radius: 6px;
 		padding: 3%;
-		margin-left: auto;
+		text-decoration: none;
 	}
 </style>
