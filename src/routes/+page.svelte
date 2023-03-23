@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Editor from './Editor.svelte';
-	import Marketplace from './Marketplace.svelte';
-	import Sidebar from './Sidebar.svelte';
+	import Editor from '$lib/components/editor/Editor.svelte';
+	import Marketplace from '$lib/components/editor/Marketplace.svelte';
+	import Sidebar from '$lib/components/editor/Sidebar.svelte';
 </script>
 
 <div id="content">
