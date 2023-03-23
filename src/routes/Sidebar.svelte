@@ -1,8 +1,17 @@
-<div>sidebar</div>
+<div id="content">
+	<div class="sidebar-area" id="step">step</div>
+	<div class="sidebar-area" id="job">job</div>
+	<div class="sidebar-area" id="action">action</div>
+</div>
 
 <style>
-	div {
-		outline-color: black;
-		outline-style: solid;
+	#content {
+		display: grid;
+		grid-template-areas: 'step' 'job' 'action';
+		row-gap: 2px;
+	}
+
+	.sidebar-area {
+		background-color: white;
 	}
 </style>

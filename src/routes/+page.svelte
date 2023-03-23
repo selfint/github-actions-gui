@@ -12,6 +12,8 @@
 
 <style>
 	#content {
+		background-color: #d0d7de;
+		column-gap: 2px;
 		display: grid;
 		grid-template-areas: 'sidebar editor marketplace';
 		grid-template-columns: 1fr 4fr 1fr;

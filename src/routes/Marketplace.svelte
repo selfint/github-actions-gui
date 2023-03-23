@@ -2,7 +2,6 @@
 
 <style>
 	div {
-		outline-color: black;
-		outline-style: solid;
+		background-color: white;
 	}
 </style>
