@@ -19,7 +19,7 @@
 
 	:global(html) {
 		height: 100%;
-		font-family: 'SF Pro text';
+		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	}
 
 	:global(body) {
