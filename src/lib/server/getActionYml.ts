@@ -1,8 +1,8 @@
 import YAML from "yaml";
 import type { Fetcher } from "./fetcher";
-import type { Action } from "$lib/types/action";
+import type { ActionSchema } from "$lib/types/actionSchema";
 
-export function getActionYml(fetcher: Fetcher, action: string): Action | undefined {
+export function getActionYml(fetcher: Fetcher, action: string): ActionSchema | undefined {
     const content = fetcher.fetch(action);
 
     if (content !== undefined) {
