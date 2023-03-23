@@ -17,7 +17,12 @@
 		padding: 0;
 	}
 
-	:global(html, body) {
+	:global(html) {
+		height: 100%;
+		font-family: 'SF Pro text';
+	}
+
+	:global(body) {
 		height: 100%;
 	}
 

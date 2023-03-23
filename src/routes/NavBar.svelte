@@ -1,5 +1,5 @@
 <nav>
-	<div>Github Actions UI</div>
+	<div id="name">Github Actions UI</div>
 	<div id="buttons">
 		<a class="button edit" href="/">Edit</a>
 		<a class="button export" href="/export">Export</a>
@@ -8,32 +8,36 @@
 
 <style>
 	nav {
+		align-items: center;
 		background-color: #1e1e1e;
-		color: #ffffff;
 		display: grid;
 		grid-template-areas: 'title' 'buttons';
 		grid-template-columns: 1fr 1fr;
-		padding: 0.5em;
+		padding: 0.5rem;
+	}
+
+	#name {
+		color: #ffffff;
+		font-size: xx-large;
 	}
 
 	.edit {
-		margin-left: auto;
-		color: #1b1f24;
 		background-color: #f6f8fa;
+		color: #1b1f24;
+		font-weight: bold;
 	}
 
 	.export {
-		margin-left: auto;
 		background-color: #2da44e;
 		color: #ffffff;
 	}
 
 	.button {
-		border-radius: 6px;
-		padding: 1px;
-		height: fit-content;
-		width: fit-content;
+		border-radius: 0.4em;
+		padding: 0.6em;
+		margin: 0.3em;
 		text-decoration: none;
+		font-size: medium;
 	}
 
 	#buttons {
