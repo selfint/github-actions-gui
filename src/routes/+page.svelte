@@ -15,8 +15,6 @@
 		display: grid;
 		grid-template-areas: 'sidebar editor marketplace';
 		grid-template-columns: 1fr 4fr 1fr;
-		outline-style: solid;
-		outline-color: red;
 		height: 100%;
 	}
 </style>

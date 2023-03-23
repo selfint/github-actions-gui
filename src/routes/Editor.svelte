@@ -4,6 +4,5 @@
 	div {
 		outline-color: black;
 		outline-style: solid;
-		height: 100%;
 	}
 </style>
