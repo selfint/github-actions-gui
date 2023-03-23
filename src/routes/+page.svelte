@@ -4,16 +4,19 @@
 	import Sidebar from './Sidebar.svelte';
 </script>
 
-<div class="row">
+<div id="content">
 	<Sidebar />
 	<Editor />
 	<Marketplace />
 </div>
 
 <style>
-	.row {
-		display: flex;
-		flex-direction: row;
+	#content {
+		display: grid;
+		grid-template-areas: 'sidebar editor marketplace';
+		grid-template-columns: 1fr 4fr 1fr;
+		outline-style: solid;
+		outline-color: red;
 		height: 100%;
 	}
 </style>

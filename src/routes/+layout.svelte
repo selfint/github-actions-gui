@@ -6,12 +6,9 @@
 	<title>Github Action UI</title>
 </svelte:head>
 
-<div id="nav">
-	<NavBar />
-</div>
-
-<div id="content">
-	<slot />
+<div id="layout">
+	<div id="nav"><NavBar /></div>
+	<div id="slot"><slot /></div>
 </div>
 
 <style>
@@ -24,15 +21,20 @@
 		height: 100%;
 	}
 
-	:root {
-		--var1: 7%;
+	#layout {
+		display: grid;
+		grid-template-areas:
+			'nav'
+			'slot';
+		grid-template-rows: max-content auto;
+		height: 100%;
 	}
 
 	#nav {
-		height: var(--var1);
+		grid-area: nav;
 	}
 
-	#content {
-		height: calc(100% - var(--var1));
+	#slot {
+		grid-area: slot;
 	}
 </style>
