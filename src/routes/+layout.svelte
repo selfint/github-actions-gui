@@ -1,53 +1,34 @@
-<script>
-	import Header from './Header.svelte';
-	import './styles.css';
+<script lang="ts">
+	import NavBar from './NavBar.svelte';
 </script>
 
-<div class="app">
-	<Header />
+<svelte:head>
+	<title>Github Action UI</title>
+</svelte:head>
 
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+<div id="layout">
+	<NavBar />
+	<slot />
 </div>
 
 <style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+	:global(*) {
+		margin: 0;
+		padding: 0;
 	}
 
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+	:global(html) {
+		height: 100%;
+		font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+	:global(body) {
+		height: 100%;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	#layout {
+		display: grid;
+		grid-template-rows: max-content auto;
+		height: 100%;
 	}
 </style>
