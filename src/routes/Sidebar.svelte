@@ -8,6 +8,7 @@
 	#content {
 		display: grid;
 		grid-template-areas: 'step' 'job' 'action';
+		grid-template-rows: 3fr 2fr 1fr;
 		row-gap: 2px;
 	}
 
