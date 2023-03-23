@@ -1,16 +1,14 @@
 import YAML from "yaml";
 import type { Fetcher } from "./fetcher";
+import type { Action } from "$lib/types/action";
 
-export type ActionYml = {
-    name: string
-};
-
-export function getActionYml(fetcher: Fetcher, action: string): ActionYml | undefined {
+export function getActionYml(fetcher: Fetcher, action: string): Action | undefined {
     const content = fetcher.fetch(action);
 
     if (content !== undefined) {
         try {
-            return YAML.parse(content);
+            const actionYml = YAML.parse(content);
+            return actionYml;
         } catch (error) {
             console.error(error);
         }

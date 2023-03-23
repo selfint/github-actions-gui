@@ -15,9 +15,20 @@ const testFetcher: Fetcher = {
 
 describe('test get action yml', () => {
     it('works', () => {
-        expect(getActionYml(
+        const action = getActionYml(
             testFetcher,
             "https://github.com/actions/checkout/blob/v3.4.0/action.yml"
-        )).toMatchSnapshot();
+        );
+
+        expect(action?.description).toMatchInlineSnapshot('"Checkout a Git repository at a particular version"');
+        expect(action?.name).toMatchInlineSnapshot('"Checkout"');
+        expect(action?.runs).toMatchInlineSnapshot(`
+          {
+            "main": "dist/index.js",
+            "post": "dist/index.js",
+            "using": "node16",
+          }
+        `);
+        expect(action?.inputs).toMatchSnapshot();
     })
 });
