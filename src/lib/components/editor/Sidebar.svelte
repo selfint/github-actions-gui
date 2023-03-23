@@ -1,5 +1,9 @@
+<script lang="ts">
+	import Step from './sidebar/Step.svelte';
+</script>
+
 <div id="content">
-	<div class="sidebar-area" id="step">step</div>
+	<div class="sidebar-area" id="step"><Step /></div>
 	<div class="sidebar-area" id="job">job</div>
 	<div class="sidebar-area" id="action">action</div>
 </div>
