@@ -4,3 +4,5 @@
 	let job = $selectedJob;
 	let step = $selectedStep;
 </script>
+
+step
